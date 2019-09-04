@@ -7,8 +7,6 @@ server:
   port: 7001
 spring:
   profiles: dev
-  application:
-    name: microsevice-config-eureka-client
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
@@ -23,8 +21,6 @@ server:
   port: 7001
 spring:
   profiles: test
-  application:
-    name: microsevice-config-eureka-client
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
