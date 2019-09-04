@@ -15,12 +15,12 @@ eureka:
     fetch-registry: false #false表示自己端就是注册中心，只维护服务实例，不需要去检索服务
     service-url:
       #单机版 defaultZone: http://localhost:7001/eureka/ #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka.com:7001/eureka/
 ---
 server:
   port: 7001
 spring:
-  profiles: test
+  profiles: dev
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
@@ -29,4 +29,4 @@ eureka:
     fetch-registry: false #false表示自己端就是注册中心，只维护服务实例，不需要去检索服务
     service-url:
       #单机版 defaultZone: http://localhost:7001/eureka/ #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka.com:7001/eureka/
